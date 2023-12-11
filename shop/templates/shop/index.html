@@ -2,22 +2,25 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Товары</title>
+    <title>Products</title>
 </head>
 <body>
     <div>
-        <h3>Список</h3>
+        <h3>List</h3>
+            <tr>
+                <td><p><a href="/discount/">Registration in the loyalty program</a></p></td>
+            </tr>
         <table>
             <tr>
-                <td><p>Наименование</p></td>
-                <td><p>Цена</p></td>
+                <td><p>Name</p></td>
+                <td><p>Price</p></td>
                 <td></td>
             </tr>
             {% for p in products %}
                 <tr>
                     <td><p>{{ p.name }}</p></td>
                     <td><p>{{ p.price }}</p></td>
-                    <td><p><a href="/buy/{{ p.id }}">Купить</a></p></td>
+                    <td><p><a href="/buy/{{ p.id }}">Buy</a></p></td>
                 </tr>
             {% endfor %}
         </table>

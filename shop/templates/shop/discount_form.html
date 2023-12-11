@@ -2,23 +2,18 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Purchase</title>
+    <title>Registration in the loyalty program</title>
 </head>
 <body>
     <div>
-        <h3>Purchase</h3>
+        <h3>Registration in the loyalty program</h3>
         <form method="post">{% csrf_token %}
-            <input type="hidden" value="{{ view.kwargs.product_id }}" name="product" />
+             <input type="hidden" value="{{ 0 }}" name="total" />
+             <input type="hidden" value="{{ 0 }}" name="discount" />
             <table>
                 <tr>
-                    <td><p>Enter your name </p></td>
+                    <td><p>Enter your name</p></td>
                     <td><input type="text" name="person" /> </td>
-                </tr>
-                <tr>
-                    <td><p>Enter the delivery address:</p></td>
-                    <td>
-                        <input type="text" name="address" />
-                    </td>
                 </tr>
                 <tr><td><input type="submit" value="Send" /> </td><td></td></tr>
             </table>

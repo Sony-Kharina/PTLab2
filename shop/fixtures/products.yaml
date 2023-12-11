@@ -1,15 +1,30 @@
 - model: shop.product
   pk: 1
   fields:
-    name: Стол
-    price: 2000
+    name: Blender
+    price: 4500
 - model: shop.product
   pk: 2
   fields:
-    name: Стул
-    price: 1000
+    name: Freezer
+    price: 73000
 - model: shop.product
   pk: 3
   fields:
-    name: Табурет
-    price: 500
+    name: Stove
+    price: 26000
+- model: shop.product
+  pk: 4
+  fields:
+    name: Toaster
+    price: 1500
+- model: shop.product
+  pk: 5
+  fields:
+    name: Hair dryer
+    price: 2500
+- model: shop.product
+  pk: 6
+  fields:
+    name: TV screen
+    price: 39000
